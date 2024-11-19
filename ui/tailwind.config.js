@@ -2,7 +2,8 @@
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  presets: [require("@neo4j-ndl/base").tailwindConfig],
+  import { tailwindConfig } from "@neo4j-ndl/base";
+  presets: [tailwindConfig],
   prefix: "",
   theme: {
     extend: {},
